@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Hello VuePress',
   description: 'Just playing around',
+  base: '/bar/',
   configureWebpack: {
     resolve: {
       alias: {
@@ -16,7 +17,8 @@ module.exports = {
     config: md => {
       // 使用更多 markdown-it 插件！
       md.use(require('markdown-it-xxx'))
-    }
+    },
+    lineNumbers: true
   }
 }
 
